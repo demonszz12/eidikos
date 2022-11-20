@@ -7,7 +7,7 @@
     position: relative;
 }
 
-  .name,.password,.category{
+  .name,.email,.password,.category{
     display: flex;
     justify-content: space-between;
   }

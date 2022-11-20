@@ -11,7 +11,7 @@ const Sidebar=()=>{
     const userlogo = ()=>{
         if(JSON.parse(localStorage.getItem("user"))){
             // setName( JSON.parse(localStorage.getItem("user")));
-            return JSON.parse(localStorage.getItem("user"))[0];
+            return JSON.parse(localStorage.getItem("user"))[0].toUpperCase();
         }
         else{
             // setName("Not Valid")

@@ -7,17 +7,18 @@ import axios from "axios"
 const Signup = () => {
     const navigate = useNavigate();
     const [username,setUsername] = useState("");
+    const [email,setEmail] = useState("");
     const [password,setPassword] = useState(" ");
     const [category,setCategory] = useState(" ");
     const handlenav=()=>{
         navigate("/login")
     }
     const handlesubmit =()=>{
-        const payload = {username,password,category};
+        const payload = {username,email,password,category};
         console.log(payload);
         axios({
             method: 'post',
-            url: 'https://eidikosbe.onrender.com/signup',
+            url: 'https://eidikosbe-api.onrender.com/signup',
             data: payload
           })
           .then(r=>{
@@ -41,6 +42,10 @@ const Signup = () => {
             <div className="name">
                 <label className='label' htmlFor="">Username :</label>
                 <input className='inp' onChange={(e)=>setUsername(e.target.value)} type="text"  />
+            </div>
+            <div className="email">
+                <label className='label' htmlFor="">Email_Id :</label>
+                <input className='inp' onChange={(e)=>setEmail(e.target.value)} type="text"  />
             </div>
             <div className="password">
                 <label className='label' htmlFor="">Password :</label>

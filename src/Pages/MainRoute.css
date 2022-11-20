@@ -23,3 +23,9 @@
         width:100%;
     }
 }
+
+@media all and (max-width:450px){
+    .Content{
+        grid-template-columns: 1fr;
+    }
+}

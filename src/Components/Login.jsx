@@ -23,11 +23,11 @@ const Login = () => {
   const [username,setUsername] = useState("");
   const [password,setPassword] = useState("");
   const handleLogin=()=>{
-    const payload = {username,password}
+    const payload = {email:username,password}
     console.log(payload);
     axios({
       method: 'post',
-      url: 'https://eidikosbe.onrender.com/login',
+      url: 'https://eidikosbe-api.onrender.com/login',
       data: payload
     })
     .then(r=>{
@@ -59,7 +59,7 @@ const Login = () => {
     <div className="centered-element">
     <h1>LOGIN</h1>
         <div className="name">
-            <label className='label' htmlFor="">Username :</label>
+            <label className='label' htmlFor="">Email_id :</label>
             <input className='inp' onChange={(e)=>setUsername(e.target.value)} type="text"  />
         </div>
         <div className="password">

@@ -15,3 +15,9 @@
     color:white;
     text-decoration: underline;
 }
+
+@media all and (max-width:450px){
+    .sidebar{
+        height: auto;
+    }
+}
