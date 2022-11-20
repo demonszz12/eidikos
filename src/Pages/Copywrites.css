@@ -1,0 +1,29 @@
+.copy{
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    font-size:20px;
+    gap:10px;
+    background-color: cornflowerblue;
+    color: white;
+}
+.copy>img{
+    width:20px;
+    padding:1px;
+ }
+
+
+@media all and (max-width:900px){
+    .copy{
+       font-size: 13px; 
+    }
+    
+}
+@media all and (max-width:400px){
+    .copy{
+        font-size: 8px; 
+     }
+     .copy>img{
+        width:20px
+     }
+}

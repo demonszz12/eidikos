@@ -1,0 +1,30 @@
+.videoContent{
+    width:100%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.eachone{
+    width:80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.frame{
+    border-radius: 15px;
+    /* border:1px solid red; */
+    overflow: hidden;
+}
+
+@media all and (max-width:730px){
+    .videoContent{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media all and (max-width:420px){
+    .videoContent{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,24 @@
+.Content{
+ width:100%;
+ display: flex;
+ padding:0px;
+ margin:0px;
+}
+
+.Navbar{
+    width:20%;
+    border-right: 1px solid aqua;
+}
+
+.Container{
+    width:100%;
+}
+
+@media all and (max-width:720px){
+    .Navbar{
+        display: none;
+    }
+    .Container{
+        width:100%;
+    }
+}
