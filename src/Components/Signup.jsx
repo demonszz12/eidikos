@@ -17,7 +17,7 @@ const Signup = () => {
         console.log(payload);
         axios({
             method: 'post',
-            url: 'http://localhost:4000/signup',
+            url: 'https://eidikosbe.onrender.com/signup',
             data: payload
           })
           .then(r=>{

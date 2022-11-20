@@ -1,6 +1,7 @@
 .Content{
  width:100%;
- display: flex;
+ display: grid;
+ grid-template-columns: 1fr 4fr;
  padding:0px;
  margin:0px;
 }

@@ -27,7 +27,7 @@ const Login = () => {
     console.log(payload);
     axios({
       method: 'post',
-      url: 'http://localhost:4000/login',
+      url: 'https://eidikosbe.onrender.com/login',
       data: payload
     })
     .then(r=>{
@@ -37,6 +37,7 @@ const Login = () => {
       {
         alert(msg);
         localStorage.setItem("default",JSON.stringify(r.data.category))
+        localStorage.setItem("user",JSON.stringify(r.data.user))
         const search = JSON.parse(localStorage.getItem("default"))
         getSearch(search)
         axios.get(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyAiYrMi2suiglPfmA8F2t-O0oZ2E9-b_y4&type=video&part=snippet&maxResults=20&q=${search}`)

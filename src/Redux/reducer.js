@@ -1,6 +1,6 @@
 import * as types from "./actionTypes";
 const initialState = {
-  search:JSON.parse(localStorage.getItem("default")) || "News",
+  search: JSON.parse(localStorage.getItem("default")) || "News",
   videos:[],
   isLoading: false,
   isError: false,

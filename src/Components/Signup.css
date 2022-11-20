@@ -70,3 +70,18 @@
     cursor: pointer;
     color:blue;
   }
+
+  .user h1{
+    color:blue;
+    width:50px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .uname{
+    color:white;
+    display: flex;
+    justify-content: center;
+  }
